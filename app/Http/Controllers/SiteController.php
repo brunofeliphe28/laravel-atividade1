@@ -17,18 +17,18 @@ class SiteController extends Controller
     {
 
         $lista = [[
-            'cpf' => 123323,
+            'cpf' => 12323,
             'nome' => 'bruno1',
             'email' => 'bruno1@gmail',
             
         ],[
-            'cpf' => 65463454,
+            'cpf' => 653454,
             'nome' => 'bruno2',
             'email' => 'bruno2@gmail',
             
         ],[
 
-            'cpf' => 8484848,
+            'cpf' => 84848,
             'nome' => 'bruno3',
             'email' => 'bruno3@gmail',
             
