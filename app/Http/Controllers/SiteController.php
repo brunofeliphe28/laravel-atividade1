@@ -9,7 +9,7 @@ class SiteController extends Controller
     
     public function cliente()
     {
-        $subtitulo= 'Aqui tem uma variavel só pra falar que fiz';
+        $subtitulo= 'Aqui tem uma variavel só pra falar que fiz a atividade';
         return view('site.loja.cliente', compact('subtitulo'));
     }
 
@@ -17,18 +17,18 @@ class SiteController extends Controller
     {
 
         $lista = [[
-            'cpf' => 1223,
+            'cpf' => 123323,
             'nome' => 'bruno1',
             'email' => 'bruno1@gmail',
             
         ],[
-            'cpf' => 1223,
+            'cpf' => 65463454,
             'nome' => 'bruno2',
             'email' => 'bruno2@gmail',
             
         ],[
 
-            'cpf' => 1223,
+            'cpf' => 8484848,
             'nome' => 'bruno3',
             'email' => 'bruno3@gmail',
             
