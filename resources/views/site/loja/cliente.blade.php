@@ -12,7 +12,7 @@
 
 
 
-    <h1>teste</h1>
+    <h1><?=$subtitulo?></h1>
 
     <div class="form-group">
         <label for="nome">Nome</label>

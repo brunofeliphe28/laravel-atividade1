@@ -31,7 +31,7 @@
               </tr>
 
             </thead>
-            tbody>
+            <tbody>
                 @foreach ($lista as $listar)
                     <tr>
                         <td>{{$listar['cpf']}}</td>

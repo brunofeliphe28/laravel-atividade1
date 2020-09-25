@@ -6,15 +6,11 @@ use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
-    public function contato()
-    {
-        return view('site.loja.contato');
-    }
-
-
+    
     public function cliente()
     {
-        return view('site.loja.cliente');
+        $subtitulo= 'Aqui tem uma variavel só pra falar que fiz';
+        return view('site.loja.cliente', compact('subtitulo'));
     }
 
     public function listar()
@@ -28,17 +24,22 @@ class SiteController extends Controller
         ],[
             'cpf' => 1223,
             'nome' => 'bruno2',
-            'email' => 'bruno1@gmail',
+            'email' => 'bruno2@gmail',
             
         ],[
 
             'cpf' => 1223,
             'nome' => 'bruno3',
-            'email' => 'bruno1@gmail',
+            'email' => 'bruno3@gmail',
             
         ]];
 
         return view('site.loja.listar',compact ('lista'));
+    }
+
+    public function contato()
+    {
+        return view('site.loja.contato');
     }
 
 }
