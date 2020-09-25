@@ -28,6 +28,7 @@
                 <th scope="col">Cpf</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Email</th>
+                <th scope="col">Total Comprado</th>
               </tr>
 
             </thead>
@@ -36,9 +37,17 @@
                     <tr>
                         <td>{{$listar['cpf']}}</td>
                         <td>{{$listar['nome']}}</td>
-                        <td>{{$listar['email']}}</td>                        
+                        <td>{{$listar['email']}}</td>
+                        <td>{{$listar['total']}}</td> 
+
                     </tr>
-                @endforeach                
+                @endforeach 
+                <tr>
+                  <td>Renda Total:</td>
+                  <td></td>
+                  <td></td>
+                  <td>R$ {{$total}}</td>
+              </tr>               
             </tbody>
         </table>
     </div>

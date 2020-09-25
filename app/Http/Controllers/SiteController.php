@@ -15,26 +15,32 @@ class SiteController extends Controller
 
     public function listar()
     {
+        $total=0;
 
         $lista = [[
-            'cpf' => 12323,
+            'cpf'=>154687,            
             'nome' => 'bruno1',
             'email' => 'bruno1@gmail',
+            'total' => 150.0,
             
         ],[
-            'cpf' => 653454,
+            'cpf'=>1535468,            
             'nome' => 'bruno2',
             'email' => 'bruno2@gmail',
+            'total' => 150.0,
             
         ],[
-
-            'cpf' => 84848,
+            'cpf'=>459875,            
             'nome' => 'bruno3',
             'email' => 'bruno3@gmail',
+            'total' => 150.0,
             
         ]];
 
-        return view('site.loja.listar',compact ('lista'));
+        foreach ($lista as $listar) {
+            $total += $listar['total'];}
+
+        return view('site.loja.listar',compact ('lista','total'));
     }
 
     public function contato()
